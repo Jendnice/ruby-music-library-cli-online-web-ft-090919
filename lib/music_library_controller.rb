@@ -40,7 +40,6 @@ class MusicLibraryController
     end
   end 
   
-  binding.pry
   
   def list_artists
     songs_sorted_by_artist = Artist.all.sort_by do |artist|
@@ -89,8 +88,7 @@ class MusicLibraryController
    def play_song
       
      puts "Which song number would you like to play?"
-     array = []
-     array << list_songs
+     list_songs
     
      input = gets.strip.to_i
      binding.pry 
@@ -99,6 +97,8 @@ class MusicLibraryController
        puts "Playing #{song.name} by #{song.artist.name}"
       end 
    end 
+   
+    
   
   # def play_song
   #   puts "Which song number would you like to play?"
