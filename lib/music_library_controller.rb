@@ -28,6 +28,9 @@ class MusicLibraryController
      when "list songs"
        list_songs
      end 
+     when "list artists"
+       list_artists
+     end 
    end
   end 
   
