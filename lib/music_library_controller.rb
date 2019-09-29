@@ -24,10 +24,10 @@ class MusicLibraryController
      puts "What would you like to do?"
      input = gets.strip 
      
-     #case input 
-    # when "list songs"
-     #  list_songs
-    #  end 
+     case input 
+     when "list songs"
+       list_songs
+     end 
    end
   end 
   
@@ -90,16 +90,6 @@ class MusicLibraryController
     end
   end
   
-  # def play_song
-      
-  #   puts "Which song number would you like to play?"
-  #   input = gets.strip.to_i
-     
-  #   if (1..list_songs.length).include?(input+1)
-  #     song = list_songs[input+1]
-  #     puts "Playing #{song.name} by #{song.artist.name}"
-  #     end 
-  # end 
    
    def play_song
     puts "Which song number would you like to play?"
